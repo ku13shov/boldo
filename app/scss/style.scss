@@ -269,3 +269,66 @@ body {
         }
     }
 }
+
+.action {
+    &__inner {
+        background: url("../images/action.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 12px;
+        padding: 72px 0;
+    }
+
+    &__title {
+        max-width: 716px;
+        width: 100%;
+        margin: 0 auto 48px;
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 72px;
+        color: #fff;
+    }
+
+    &__form {
+        text-align: center;
+
+        &-email {
+            font-size: 20px;
+            line-height: 32px;
+            color: #000;
+            padding: 0 32px;
+            border-radius: 56px;
+            border: none;
+            background-color: #fff;
+            max-width: 370px;
+            width: 100%;
+            height: 56px;
+            outline-color: #65e4a3;
+            margin-right: 24px;
+
+            &::placeholder {
+                color: #000;
+            }
+        }
+
+        &-btn {
+            border-radius: 56px;
+            max-width: 210px;
+            width: 100%;
+            height: 56px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            color: #0a2640;
+            background-color: #65e4a3;
+            transition: background-color .2s ease-in-out;
+
+            &:hover {
+                background-color: #2bd07c;
+            }
+        }
+    }
+}
